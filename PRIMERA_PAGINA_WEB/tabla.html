@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMERA PÁGINA WEB</title> 
+       
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <h1>INDUSTRIA ELÉCTRICA PERUANA</h1>
+
+        <nav>
+            <ul>
+                <li> <a href="index.html">INICIO</a> </li>
+                <li> <a class="active" href="tabla.html">TABLA</a> </li>            
+            </ul>
+        </nav>
+        
+        
+
+    </header>
+
+    <h2 style="margin: 15px;">ACTIVIDADES DE LA CADENA PRODUCTIVA</h2> <!--Margen para el subtítulo-->
+    
+    <hr>
+
+    <div class="container"> <!--Agrupador de bloque-->
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(245, 229, 9);">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+
+            <th></th> <!--Cabecera-->
+            <th>PROPÓSITO:</th>
+            <th>COMPOSICIÓN:</th>
+
+            <tr> <!--FILA-->
+                <td>GENERACIÓN ELÉCTRICA</td>
+                <td>Se encarga de transformar las fuentes de
+                    energía primaria en energía eléctrica
+                </td>
+                <td>Centrales hidroeléctricas,
+                    térmicas, solares, eólicas y nucleares
+                </td>
+            </tr>
+
+            <tr> <!--FILA-->
+                <td>TRANSMISIÓN ELÉCTRICA</td>
+                <td>Permite transportar la electricidad desde los centros de
+                    generación hacia las zonas de consumo final
+                </td>
+                <td>
+                    Líneas de transmisión, subestaciones,
+                    torres de alta tensión, entre otras
+                </td>
+            </tr>
+
+            <tr> <!--FILA-->
+                <td>DISTRIBUCIÓN ELÉCTRICA</td>
+                <td>
+                    Se traslada electricidad hacia los
+                    consumidores finales mediante redes eléctricas de
+                    mediana y baja tensión
+                </td>
+                <td>
+                    Comprenden líneas y redes primarias en media
+                    tensión (MT), subestaciones (SED), redes de distribución secundaria (BT) 
+                    e instalaciones de alumbrado público (AP). 
+                </td>
+            </tr>
+
+            <tr> <!--FILA-->
+                <td>COMERCIALIZACIÓN</td>
+                <td>
+                    Entrega de electricidad desde la generación hasta 
+                    el usuario final 
+                </td>
+                <td>
+                    Comercialización mayorista (entre generadores y distribuidores) 
+                    y minorista (con los usuarios regulados del servicio)
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+
+
+    <footer class="footer">
+
+        <p>DERECHOS RESERVADOS &COPY; 2024</p>
+
+    </footer>
+
+</body>
+
+</html>
